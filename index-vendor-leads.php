@@ -1,11 +1,10 @@
 
 <? 
 	
-	include '../../includes/la-common-top-inner.php';
-
-	include '../../includes/la-common-header-inner.inc'; 
-
-	include '../../includes/connect4.inc';
+  include '../modules/configuration.inc';
+  include '../modules/db.php';
+  include $rootInclude.'la-common-top-inner.php';
+	include $rootInclude.'la-common-header-inner.inc'; 
 
 ?>
 
@@ -90,7 +89,7 @@
 
 
 						<!-- sidebar accordian menu -->
-						<? include '../../includes/la-common-sidebar-menu.inc'; ?>
+						<? include $rootInclude.'la-common-sidebar-menu.inc'; ?>
 
 
 					 </div><!-- #mobslide --> 
@@ -380,7 +379,7 @@
 </section><!-- /.tool_page -->
 
             
- <? include '../../includes/la-common-footer-inner.inc'; ?>
+ <? include $rootInclude.'la-common-footer-inner.inc'; ?>
 
       
 <script>
