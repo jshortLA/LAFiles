@@ -1,10 +1,9 @@
-
 <? 
-	
   include '../modules/configuration.inc';
   include '../modules/db.php';
   include $rootInclude.'la-common-top-inner.php';
 	include $rootInclude.'la-common-header-inner.inc'; 
+	
 
 ?>
 
@@ -159,7 +158,7 @@
       
           <!-- header START -->          
           <div style="position: absolute; right: 0px; top: 10; z-index: 200; border-top-right-radius: 5px; overflow: hidden;">
-            <a href='https://www.landscapearchitect.com/vendor/logoff.php'><input type='image' src='/imgz2/logoff-button.jpg' style="box-shadow: -5px 5px 5px #888888;" border='0' id="logOffBtn" /></a>
+            <a href='<?php echo BASE_URL; ?>vendor/logoff.php'><input type='image' src='/imgz2/logoff-button.jpg' style="box-shadow: -5px 5px 5px #888888;" border='0' id="logOffBtn" /></a>
           </div>
 
       
@@ -178,13 +177,13 @@
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center_section salesLeadPage">
 
                <div class="salesLeadHeaderContainer">
-                  <h2 class="vendorSectionTitles">Sales Lead Retrievals</h2>
-                  <a href="https://landscapearchitect.com/vendor/index-vendor.php?action=edit&id=<? echo $company_id ?>"><button class="button_style">Back to Vendor Profile &amp; Lead Center</button></a>
+                  <h2 class="vendorSectionTitles">Sales Lead Retrieval</h2>
+                  <a href="<?php echo BASE_URL; ?>vendor/index-vendor.php?action=edit&id=<? echo $company_id ?>"><button class="button_style">Back to Vendor Profile &amp; Lead Center</button></a>
               </div>
 
               <div class="salesLeadButtonContainer row">
                 
-                <a href="https://landscapearchitect.com/vendor/ex-test-week3.php?id=<? echo $company_id ?>&week=<? echo $week2 ?>" class="col-md-5"><button class="button_style">Download This Lead Report in .xls Format</button></a>
+                <a href="<?php echo BASE_URL; ?>vendor/ex-test-week3.php?id=<? echo $company_id ?>&week=<? echo $week2 ?>" class="col-md-5"><button class="button_style">Download This Lead Report in .xls Format</button></a>
 
                 <div class="col-md-4"><button class="button_style" onClick="printDiv('printLeadsContainer')">Print This Lead Report</button></div>
                 
