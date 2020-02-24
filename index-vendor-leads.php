@@ -178,7 +178,7 @@
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center_section salesLeadPage">
 
                <div class="salesLeadHeaderContainer">
-                  <h2 class="vendorSectionTitles">Sales Lead Retrieval</h2>
+                  <h2 class="vendorSectionTitles">Sales Lead Retrievals</h2>
                   <a href="https://landscapearchitect.com/vendor/index-vendor.php?action=edit&id=<? echo $company_id ?>"><button class="button_style">Back to Vendor Profile &amp; Lead Center</button></a>
               </div>
 
